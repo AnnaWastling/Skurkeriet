@@ -8,6 +8,8 @@ import { SkurkerietComponent } from './skurkeriet/skurkeriet.component';
 import { FoljOssComponent } from './folj-oss/folj-oss.component';
 import { TengilComponent } from './tengil/tengil.component';
 import { SpeletComponent } from './spelet/spelet.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatTabsModule} from '@angular/material/tabs';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { SpeletComponent } from './spelet/spelet.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatTabsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

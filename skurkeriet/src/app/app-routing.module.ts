@@ -1,7 +1,18 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { HistoriaComponent } from './historia/historia.component';
+import { SkurkerietComponent } from './skurkeriet/skurkeriet.component';
+import { FoljOssComponent } from './folj-oss/folj-oss.component';
+import { TengilComponent } from './tengil/tengil.component';
+import { SpeletComponent } from './spelet/spelet.component';
 
-const routes: Routes = [];
+const routes: Routes = [
+  { path: 'historia', component: HistoriaComponent },
+  { path: 'skurkeriet', component: SkurkerietComponent },
+  { path: 'folj-oss', component: FoljOssComponent },
+  { path: 'tengil', component: TengilComponent },
+  { path: 'spelet', component: SpeletComponent }
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
