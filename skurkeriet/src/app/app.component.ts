@@ -13,24 +13,24 @@ export class AppComponent {
   constructor(private router: Router) {
     this.navLinks = [
         {
-            label: 'aktivitetsschema',
-            link: './aktivitetsschema',
+            label: 'historia',
+            link: './historia',
             index: 0
         }, {
-            label: 'klasschema',
-            link: './klasschema',
+            label: 'skurkeriet',
+            link: './skurkeriet',
             index: 1
         }, {
-            label: 'nolleboken',
-            link: './nolleboken',
+            label: 'folj-oss',
+            link: './folj-oss',
             index: 2
         }, {
-          label: 'forestandare',
-          link: './forestandare',
+          label: 'tengil',
+          link: './tengil',
           index: 3
         }, {
-          label: 'huvudklassfaddrar',
-          link: './huvudklassfaddrar',
+          label: 'spelet',
+          link: './spelet',
           index: 4
         },  
     ];
