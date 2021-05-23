@@ -11,6 +11,15 @@ import { SpeletComponent } from './spelet/spelet.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatTabsModule} from '@angular/material/tabs';
 import { SpelplanComponent } from './spelplan/spelplan.component';
+import { StartComponent } from './start/start.component';
+import {MatCardModule} from '@angular/material/card';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatIconModule } from '@angular/material/icon';
+import { MatButtonModule } from '@angular/material/button';
+import { LayoutModule } from '@angular/cdk/layout';
+import {MatExpansionModule} from '@angular/material/expansion';
+
 
 @NgModule({
   declarations: [
@@ -20,13 +29,21 @@ import { SpelplanComponent } from './spelplan/spelplan.component';
     FoljOssComponent,
     TengilComponent,
     SpeletComponent,
-    SpelplanComponent
+    SpelplanComponent,
+    StartComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatTabsModule
+    MatTabsModule,
+    MatCardModule,
+    MatGridListModule,
+    MatMenuModule,
+    MatIconModule,
+    MatButtonModule,
+    LayoutModule,
+    MatExpansionModule
   ],
   providers: [],
   bootstrap: [AppComponent]

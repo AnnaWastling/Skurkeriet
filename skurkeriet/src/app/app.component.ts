@@ -13,26 +13,30 @@ export class AppComponent {
   activeLinkIndex = -1; 
   constructor(private router: Router) {
     this.navLinks = [
-        {
+          {
+            label: 'start',
+            link: './start',
+            index: 0
+        }, {
             label: 'historia',
             link: './historia',
-            index: 0
+            index: 1
         }, {
             label: 'skurkeriet',
             link: './skurkeriet',
-            index: 1
+            index: 2
         }, {
             label: 'folj-oss',
             link: './folj-oss',
-            index: 2
+            index: 3
         }, {
           label: 'tengil',
           link: './tengil',
-          index: 3
+          index: 4
         }, {
           label: 'spelet',
           link: './spelet',
-          index: 4
+          index: 5
         },  
     ];
 }
