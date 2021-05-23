@@ -1,4 +1,66 @@
-<mat-grid-list  #grid [cols]="cols" rowHeight="20:11" gutterSize="10px">
 
-   
+
+<mat-grid-list  #grid [cols]="cols" rowHeight="20:11" gutterSize="10px">
+  
+    <mat-grid-tile rowspan ="2">
+      <div class="container">
+        <div [ngClass]="toggleProperty ? 'flipped' : ''" class="card">
+          <div class="front">
+            <p>fram</p>
+            <ng-content select="flip-card-front"></ng-content>
+            <div class="arrow-icon" (click)="toggle()">
+              <i class="ion-ios-arrow-back"></i>
+            </div>
+          </div>
+          <div class="back">
+            <p>bak</p>
+            <ng-content select="flip-card-back"></ng-content>
+            <div class="arrow-icon" (click)="toggle()">
+              <i class="ion-ios-arrow-back"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </mat-grid-tile>
+    <mat-grid-tile rowspan ="2">
+      <div class="container">
+        <div [ngClass]="toggleProperty ? 'flipped' : ''" class="card">
+          <div class="front">
+            <p>fram</p>
+            <ng-content select="flip-card-front"></ng-content>
+            <div class="arrow-icon" (click)="toggle()">
+              <i class="ion-ios-arrow-back"></i>
+            </div>
+          </div>
+          <div class="back">
+            <p>bak</p>
+            <ng-content select="flip-card-back"></ng-content>
+            <div class="arrow-icon" (click)="toggle()">
+              <i class="ion-ios-arrow-back"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </mat-grid-tile>
+    <mat-grid-tile rowspan ="2">
+      <div class="container">
+        <div [ngClass]="toggleProperty ? 'flipped' : ''" class="card">
+          <div class="front">
+            <p>fram</p>
+            <ng-content select="flip-card-front"></ng-content>
+            <div class="arrow-icon" (click)="toggle()">
+              <i class="ion-ios-arrow-back"></i>
+            </div>
+          </div>
+          <div class="back">
+            <p>bak</p>
+            <ng-content select="flip-card-back"></ng-content>
+            <div class="arrow-icon" (click)="toggle()">
+              <i class="ion-ios-arrow-back"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </mat-grid-tile>
+  
   </mat-grid-list>
