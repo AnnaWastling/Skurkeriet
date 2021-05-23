@@ -10,6 +10,7 @@ import { TengilComponent } from './tengil/tengil.component';
 import { SpeletComponent } from './spelet/spelet.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatTabsModule} from '@angular/material/tabs';
+import { SpelplanComponent } from './spelplan/spelplan.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import {MatTabsModule} from '@angular/material/tabs';
     SkurkerietComponent,
     FoljOssComponent,
     TengilComponent,
-    SpeletComponent
+    SpeletComponent,
+    SpelplanComponent
   ],
   imports: [
     BrowserModule,
