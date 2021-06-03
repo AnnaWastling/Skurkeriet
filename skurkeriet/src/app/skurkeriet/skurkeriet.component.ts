@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { Router } from '@angular/router';
+import { CardData } from '../spelkort/spelkort';
+
 
 @Component({
   selector: 'app-skurkeriet',
@@ -46,10 +48,42 @@ export class SkurkerietComponent implements OnInit {
       }
     });
   }
-  ngOnInit(): void {
-  }
-  toggle() {
-    this.toggleProperty = !this.toggleProperty;
-  }
+  cardImages = [
+    'pDGNBK9A0sk',
+    'fYDrhbVlV1E',
+    'qoXgaF27zBc',
+    'b9drVB7xIOI',
+    'TQ-q5WAVHj0'
+  ];
 
+cards: CardData[] = [];
+flippedCards: CardData[] = [];
+
+setupCards(): void {
+    this.cards = [];
+    this.cardImages.forEach((image) => {
+      const cardData: CardData = {
+        imageId: image,
+        state: 'default'
+      };
+      this.cards.push({ ...cardData });
+    });
+}
+
+cardClicked(index: number): void {
+  const cardInfo = this.cards[index];
+
+  if (cardInfo.state === 'default') {
+    cardInfo.state = 'flipped';
+    this.flippedCards.push(cardInfo);
+
+  } else if (cardInfo.state === 'flipped') {
+    cardInfo.state = 'default';
+    this.flippedCards.pop();
+  }
+}
+
+  ngOnInit(): void {
+    this.setupCards();
+  }
 }

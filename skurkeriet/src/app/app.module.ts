@@ -19,6 +19,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { LayoutModule } from '@angular/cdk/layout';
 import {MatExpansionModule} from '@angular/material/expansion';
+import { SpelkortComponent } from './spelkort/spelkort.component';
 
 
 @NgModule({
@@ -31,6 +32,7 @@ import {MatExpansionModule} from '@angular/material/expansion';
     SpeletComponent,
     SpelplanComponent,
     StartComponent,
+    SpelkortComponent,
   ],
   imports: [
     BrowserModule,
