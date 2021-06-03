@@ -1,5 +1,6 @@
 import { Component, ViewEncapsulation } from '@angular/core';
 import { Router } from '@angular/router';
+import * as AOS from 'aos';
 
 @Component({
   selector: 'app-root',
@@ -44,6 +45,7 @@ ngOnInit(): void {
   this.router.events.subscribe((res) => {
       this.activeLinkIndex = this.navLinks.indexOf(this.navLinks.find(tab => tab.link === '.' + this.router.url));
   });
+  AOS.init({duration: 1200});
 }
 
 }
