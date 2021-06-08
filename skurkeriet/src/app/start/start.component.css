@@ -9,3 +9,15 @@
     height: auto;
     vertical-align: middle;
   }
+  .märke{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+
+   }
+   .bild{
+    width: 100%;
+    height: auto;
+    
+   }

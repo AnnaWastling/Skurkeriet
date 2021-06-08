@@ -14,6 +14,7 @@ export class TengilComponent implements OnInit {
   ];
   cards: CardData[] = [];
 flippedCards: CardData[] = [];
+
 setupCards(): void {
   this.cards = [];
   this.cardImages.forEach((image) => {

@@ -1,2 +1,9 @@
 .iconify { color: yellow; }
-.iconify { width: 120px; height: 120px; }
+
+.media{
+    width: 120px; height: 120px;
+}
+
+.media:hover{
+    opacity: 0.5;
+}
