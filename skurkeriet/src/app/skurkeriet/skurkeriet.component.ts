@@ -11,7 +11,6 @@ import { CardData } from '../spelkort/spelkort';
 })
 export class SkurkerietComponent implements OnInit {
   cols : number | undefined;
-  toggleProperty = false;
 
   gridByBreakpoint = {
     xl: 3,

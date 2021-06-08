@@ -1,1 +1,10 @@
-<p>folj-oss works!</p>
+<mat-grid-list #grid [cols]="cols" rowHeight="20:11" gutterSize="10px">
+    <mat-grid-tile rowspan="2" *ngFor="let c of cards; let idx=index">
+      <app-spelkort  [data]="c" (cardClicked)="cardClicked(idx)">
+      </app-spelkort>
+    </mat-grid-tile>
+  </mat-grid-list>
+  
+  
+  
+  

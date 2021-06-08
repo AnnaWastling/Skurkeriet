@@ -1,18 +1,9 @@
 <mat-grid-list #grid [cols]="cols" rowHeight="20:11" gutterSize="10px">
-  <mat-grid-tile rowspan="2">
-    <app-spelkort></app-spelkort>>
-  </mat-grid-tile>
-  <mat-grid-tile rowspan="2">
-    <div class="container">front</div>
-  </mat-grid-tile>
-  <mat-grid-tile rowspan="2">
-    
+  <mat-grid-tile rowspan="2" *ngFor="let c of cards; let idx=index">
+    <app-spelkort  [data]="c" (cardClicked)="cardClicked(idx)">
+    </app-spelkort>
   </mat-grid-tile>
 </mat-grid-list>
 
 
 
-  <div class="grid p-16">
-    <app-spelkort *ngFor="let c of cards; let idx=index" [data]="c" (cardClicked)="cardClicked(idx)">
-    </app-spelkort>
-  </div>
