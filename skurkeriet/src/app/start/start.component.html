@@ -7,14 +7,20 @@
   <h2 class="text"> Nolle p ska bli vårt</h2></div>
   <app-historia></app-historia>
   <app-skurkeriet></app-skurkeriet>
-  <a mat-button routerLink="/spelet" >SPELET</a>
+  <div class="button-container"> <a mat-button routerLink="/spelet" >SPELET</a></div>
+
   <app-folj-oss></app-folj-oss>
   <app-tengil></app-tengil>
-  <div class="märke" data-aos="fade-zoom-in">
+  <div class="padding" data-aos="fade-zoom-in">
     <p class="text">
       Stöd Skurkeriets fortsatta gång genom att köpa Tengilmärket och
       Skurkeriets märke.
     </p>
-    <img src="assets/tengilmarke.PNG" class="bild" />
-  </div>
+  <mat-grid-list cols="2" rowHeight="20:11" gutterSize="10px">
+    <mat-grid-tile rowspan="1" ><img src="assets/tengilmarke.PNG" class="bild" />
+    </mat-grid-tile>
+    <mat-grid-tile rowspan="1" > <img src="assets/logga.png" class="bild" />
+    </mat-grid-tile>
+  </mat-grid-list>
+</div>
 </div>
