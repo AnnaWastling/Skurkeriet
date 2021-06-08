@@ -48,8 +48,8 @@ export class SkurkerietComponent implements OnInit {
     });
   }
   cardImages = [
-    'pDGNBK9A0sk',
-    'fYDrhbVlV1E',
+    'baksida',
+    'nollekort',
     'qoXgaF27zBc',
     'b9drVB7xIOI',
     'TQ-q5WAVHj0'
@@ -63,6 +63,7 @@ setupCards(): void {
     this.cardImages.forEach((image) => {
       const cardData: CardData = {
         imageId: image,
+        imageIdBack: image,
         state: 'default'
       };
       this.cards.push({ ...cardData });

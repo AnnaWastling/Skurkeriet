@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { Router } from '@angular/router';
 import { CardData } from '../spelkort/spelkort';
+import { BLACK_ON_WHITE_CSS_CLASS } from '@angular/cdk/a11y/high-contrast-mode/high-contrast-mode-detector';
 @Component({
   selector: 'app-folj-oss',
   templateUrl: './folj-oss.component.html',
@@ -60,6 +61,7 @@ setupCards(): void {
     this.cardImages.forEach((image) => {
       const cardData: CardData = {
         imageId: image,
+        imageIdBack: image,
         state: 'default'
       };
       this.cards.push({ ...cardData });

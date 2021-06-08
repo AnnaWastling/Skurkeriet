@@ -10,7 +10,7 @@ export class TengilComponent implements OnInit {
 
   constructor() { }
   cardImages = [
-    'pDGNBK9A0sk',
+    'tengil',
   ];
   cards: CardData[] = [];
 flippedCards: CardData[] = [];
@@ -19,6 +19,7 @@ setupCards(): void {
   this.cardImages.forEach((image) => {
     const cardData: CardData = {
       imageId: image,
+      imageIdBack:image,
       state: 'default'
     };
     this.cards.push({ ...cardData });
