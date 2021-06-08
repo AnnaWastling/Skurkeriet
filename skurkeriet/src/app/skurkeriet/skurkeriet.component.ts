@@ -48,11 +48,17 @@ export class SkurkerietComponent implements OnInit {
     });
   }
   cardImages = [
-    'baksida',
     'nollekort',
-    'qoXgaF27zBc',
-    'b9drVB7xIOI',
-    'TQ-q5WAVHj0'
+    'nollekort',
+    'nollekort',
+    'nollekort',
+    'nollekort',
+    'nollekort',
+    'nollekort',
+    'nollekort',
+    'nollekort',
+    'nollekort',
+    'nollekort'
   ];
 
 cards: CardData[] = [];

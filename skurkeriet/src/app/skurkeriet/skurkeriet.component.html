@@ -1,4 +1,4 @@
-<mat-grid-list #grid [cols]="cols" rowHeight="20:11" gutterSize="10px">
+<mat-grid-list #grid [cols]="cols" rowHeight="20:11" gutterSize="10px" class="padding">
   <mat-grid-tile rowspan="2" *ngFor="let c of cards; let idx=index" data-aos="zoom-in">
     <app-spelkort  [data]="c" (cardClicked)="cardClicked(idx)">
     </app-spelkort>

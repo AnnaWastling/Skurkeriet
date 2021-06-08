@@ -17,7 +17,19 @@
 
    }
    .bild{
-    width: 100%;
+    width: 70%;
+    padding-left: 15%;
     height: auto;
     
    }
+   .mat-button, .mat-raised-button{
+    background-color:black;
+    color:yellow;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+    height: 50px;
+    text-align: center;
+
+} 
