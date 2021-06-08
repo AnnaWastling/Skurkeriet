@@ -1,10 +1,21 @@
 <mat-grid-list #grid [cols]="cols" rowHeight="20:11" gutterSize="10px">
-    <mat-grid-tile rowspan="2" *ngFor="let c of cards; let idx=index">
-      <app-spelkort  [data]="c" (cardClicked)="cardClicked(idx)">
-      </app-spelkort>
-    </mat-grid-tile>
-  </mat-grid-list>
-  
-  
-  
-  
+  <mat-grid-tile data-aos="slide-up">
+    <a href="https://www.instagram.com/skurkeriet2122">
+      <span
+        class="iconify"
+        data-icon="mdi:instagram"
+        data-inline="false"
+      ></span> </a
+  ></mat-grid-tile>
+  <mat-grid-tile data-aos="slide-up">
+    <img src="assets/snapchat.png" style="width: 120px" />
+  </mat-grid-tile>
+  <mat-grid-tile data-aos="slide-up">
+    <a href="https://www.facebook.com/skurkeriet">
+      <span
+        class="iconify"
+        data-icon="mdi:facebook"
+        data-inline="false"
+      ></span> </a
+  ></mat-grid-tile>
+</mat-grid-list>

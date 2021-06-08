@@ -1,5 +1,5 @@
 <mat-grid-list cols="1">
-    <mat-grid-tile rowspan="1" *ngFor="let c of cards; let idx=index">
+    <mat-grid-tile rowspan="1" *ngFor="let c of cards; let idx=index" data-aos="zoom-in">
       <app-spelkort  [data]="c" (cardClicked)="cardClicked(idx)">
       </app-spelkort>
     </mat-grid-tile>

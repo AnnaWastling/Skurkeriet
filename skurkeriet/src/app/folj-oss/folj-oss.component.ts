@@ -1,8 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { Router } from '@angular/router';
-import { CardData } from '../spelkort/spelkort';
-import { BLACK_ON_WHITE_CSS_CLASS } from '@angular/cdk/a11y/high-contrast-mode/high-contrast-mode-detector';
+
 @Component({
   selector: 'app-folj-oss',
   templateUrl: './folj-oss.component.html',
@@ -47,41 +46,6 @@ export class FoljOssComponent implements OnInit {
       }
     });
   }
-  cardImages = [
-    'pDGNBK9A0sk',
-    'fYDrhbVlV1E',
-    'qoXgaF27zBc',
-  ];
-
-cards: CardData[] = [];
-flippedCards: CardData[] = [];
-
-setupCards(): void {
-    this.cards = [];
-    this.cardImages.forEach((image) => {
-      const cardData: CardData = {
-        imageId: image,
-        imageIdBack: image,
-        state: 'default'
-      };
-      this.cards.push({ ...cardData });
-    });
-}
-
-cardClicked(index: number): void {
-  const cardInfo = this.cards[index];
-
-  if (cardInfo.state === 'default') {
-    cardInfo.state = 'flipped';
-    this.flippedCards.push(cardInfo);
-
-  } else if (cardInfo.state === 'flipped') {
-    cardInfo.state = 'default';
-    this.flippedCards.pop();
-  }
-}
-
   ngOnInit(): void {
-    this.setupCards();
   }
 }
