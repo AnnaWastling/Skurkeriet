@@ -8,6 +8,7 @@ import { SpeletComponent } from './spelet/spelet.component';
 import { StartComponent } from './start/start.component';
 
 const routes: Routes = [
+  { path: '', redirectTo: '/start', pathMatch: 'full' },
   { path: 'start', component: StartComponent },
   { path: 'historia', component: HistoriaComponent },
   { path: 'skurkeriet', component: SkurkerietComponent },
