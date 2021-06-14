@@ -6,7 +6,6 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./historia.component.css']
 })
 export class HistoriaComponent implements OnInit {
-
   constructor() { }
 
   ngOnInit(): void {
