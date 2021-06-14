@@ -48,17 +48,16 @@ export class SkurkerietComponent implements OnInit {
     });
   }
   cardImages = [
-    'nollekort',
-    'nollekort',
-    'nollekort',
-    'nollekort',
-    'nollekort',
-    'nollekort',
-    'nollekort',
-    'nollekort',
-    'nollekort',
-    'nollekort',
-    'nollekort'
+    'korten/alice',
+    'korten/jonte',
+    'korten/simon',
+    'korten/tim',
+    'korten/aliceM',
+    'korten/patric',
+    'korten/amanda',
+    'korten/axel',
+    'korten/ellen',
+    'korten/anna',
   ];
 
 cards: CardData[] = [];
