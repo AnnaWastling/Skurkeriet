@@ -48,8 +48,8 @@ export class SkurkerietComponent implements OnInit {
     });
   }
   cardImages = [
-    'korten/alice',
     'korten/jonte',
+    'korten/alice',
     'korten/simon',
     'korten/tim',
     'korten/aliceM',
