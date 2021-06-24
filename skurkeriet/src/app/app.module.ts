@@ -19,6 +19,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { LayoutModule } from '@angular/cdk/layout';
 import {MatExpansionModule} from '@angular/material/expansion';
 import { SpelkortComponent } from './spelkort/spelkort.component';
+import {MatDialogModule} from '@angular/material/dialog';
 
 
 @NgModule({
@@ -43,7 +44,8 @@ import { SpelkortComponent } from './spelkort/spelkort.component';
     MatIconModule,
     MatButtonModule,
     LayoutModule,
-    MatExpansionModule
+    MatExpansionModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]
