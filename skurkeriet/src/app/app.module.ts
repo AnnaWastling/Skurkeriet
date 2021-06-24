@@ -1,25 +1,26 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HistoriaComponent } from './historia/historia.component';
 import { SkurkerietComponent } from './skurkeriet/skurkeriet.component';
 import { FoljOssComponent } from './folj-oss/folj-oss.component';
 import { TengilComponent } from './tengil/tengil.component';
-import { SpeletComponent } from './spelet/spelet.component';
+import { SpeletComponent, familjen, legionen, nphadderiet, kretsn } from './spelet/spelet.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {MatTabsModule} from '@angular/material/tabs';
+import { MatTabsModule } from '@angular/material/tabs';
 import { StartComponent } from './start/start.component';
-import {MatCardModule} from '@angular/material/card';
+import { MatCardModule } from '@angular/material/card';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { LayoutModule } from '@angular/cdk/layout';
-import {MatExpansionModule} from '@angular/material/expansion';
+import { MatExpansionModule } from '@angular/material/expansion';
 import { SpelkortComponent } from './spelkort/spelkort.component';
-import {MatDialogModule} from '@angular/material/dialog';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatFormFieldModule } from '@angular/material/form-field';
+
 
 
 @NgModule({
@@ -32,6 +33,10 @@ import {MatDialogModule} from '@angular/material/dialog';
     SpeletComponent,
     StartComponent,
     SpelkortComponent,
+    familjen,
+    legionen, 
+    nphadderiet, 
+    kretsn
   ],
   imports: [
     BrowserModule,
@@ -45,7 +50,8 @@ import {MatDialogModule} from '@angular/material/dialog';
     MatButtonModule,
     LayoutModule,
     MatExpansionModule,
-    MatDialogModule
+    MatDialogModule,
+    MatFormFieldModule
   ],
   providers: [],
   bootstrap: [AppComponent]

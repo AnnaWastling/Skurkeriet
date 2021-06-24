@@ -1,4 +1,4 @@
-import { Component, OnInit , Inject} from '@angular/core';
+import { Component, OnInit} from '@angular/core';
 import {MatDialog} from '@angular/material/dialog';
 
 
@@ -8,7 +8,7 @@ import {MatDialog} from '@angular/material/dialog';
   styleUrls: ['./spelet.component.css']
 })
 export class SpeletComponent implements OnInit {
-
+  
   constructor(public dialog: MatDialog) { }
 
   openDialogLegionen() {
@@ -36,6 +36,9 @@ export class SpeletComponent implements OnInit {
   templateUrl: 'legionen.html',
 })
 export class legionen {
+  hide = true;
+  password = "hej"
+
   constructor() {}
 }
 @Component({
@@ -43,6 +46,8 @@ export class legionen {
   templateUrl: 'familjen.html',
 })
 export class familjen {
+  hide = true;
+  password = "hej"
   constructor() {}
 }
 
@@ -51,6 +56,8 @@ export class familjen {
   templateUrl: 'n-phadderiet.html',
 })
 export class nphadderiet {
+  hide = true;
+  password = "hej"
   constructor() {}
 }
 
@@ -59,5 +66,7 @@ export class nphadderiet {
   templateUrl: 'kretsn.html',
 })
 export class kretsn {
+  hide = true;
+  password = "hej"
   constructor() {}
 }
