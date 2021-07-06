@@ -10,7 +10,6 @@ import { TengilComponent } from './tengil/tengil.component';
 import { SpeletComponent } from './spelet/spelet.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatTabsModule} from '@angular/material/tabs';
-import { SpelplanComponent } from './spelplan/spelplan.component';
 import { StartComponent } from './start/start.component';
 import {MatCardModule} from '@angular/material/card';
 import { MatGridListModule } from '@angular/material/grid-list';
@@ -30,7 +29,6 @@ import { SpelkortComponent } from './spelkort/spelkort.component';
     FoljOssComponent,
     TengilComponent,
     SpeletComponent,
-    SpelplanComponent,
     StartComponent,
     SpelkortComponent,
   ],
