@@ -1,49 +1,32 @@
 <style>
   body {
-    background-image: url('assets/board.jfif');
+    background-image: url('assets/spelplan.svg');
   background-repeat: no-repeat;
   background-size: cover;
+
   }
   </style>
-  <body>
-<div class="padding" >
-  <mat-grid-list cols="4" rowHeight="20:11" gutterSize="10px" class="padding">
-    <mat-grid-tile rowspan="2">
+  <body class="padding" >
+  <mat-grid-list cols="2" rowHeight="5px" gutterSize="200px">
+    <mat-grid-tile rowspan="2" (click)="openDialogLegionen()">
       <mat-card class = "legionen">
-        <mat-card-content>
-          <div>
-            <button mat-button (click)="openDialogLegionen()">Open dialog</button>
-          </div>
-        </mat-card-content>
+      <img src="assets/microrummet.svg">
       </mat-card>
     </mat-grid-tile>
-    <mat-grid-tile rowspan="2">
+    <mat-grid-tile rowspan="2" (click)="openDialogFamiljen()">
       <mat-card class = "familjen">
-        <mat-card-content>
-          <div>
-            <button mat-button (click)="openDialogFamiljen()">Open dialog</button>
-          </div>
-        </mat-card-content>
+      <img src="assets/fiket.svg">
       </mat-card>
     </mat-grid-tile>
-    <mat-grid-tile rowspan="2">
+    <mat-grid-tile rowspan="2" (click)="openDialogKretsn()">
       <mat-card class = "kretsn">
-        <mat-card-content>
-          <div>
-            <button mat-button (click)="openDialogKretsn()">Open dialog</button>
-          </div>
-        </mat-card-content>
+      <img src="assets/trappan.svg">
       </mat-card>
     </mat-grid-tile>
-    <mat-grid-tile rowspan="2">
+    <mat-grid-tile rowspan="2" (click)="openDialogNphad()">
       <mat-card class="n-phadderiet">
-        <mat-card-content>
-          <div>
-            <button mat-button (click)="openDialogNphad()">Open dialog</button>
-          </div>
-        </mat-card-content>
+      <img src="assets/täppan.svg">
       </mat-card>
     </mat-grid-tile>
   </mat-grid-list>
-</div>
 </body>
