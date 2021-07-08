@@ -1,8 +1,9 @@
-<h1 mat-dialog-title>Lösenord</h1>
+<h1>Lösenord</h1>
 <p>Ledtråd</p>
 <div mat-dialog-content>
     <mat-form-field appearance="fill">
-        <input matInput>
+      <input matInput #text text="text" value="">
+      <button (click)="checkPassword(text.value)">Svara</button>
       </mat-form-field>
 </div>
 

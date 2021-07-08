@@ -38,7 +38,11 @@ export class SpeletComponent implements OnInit {
 export class legionen {
   hide = true;
   password = "hej"
-
+checkPassword(text: string){
+  if(text == this.password){
+    window.location.href='http://www.cnn.com/';
+  }
+}
   constructor() {}
 }
 @Component({
@@ -48,6 +52,11 @@ export class legionen {
 export class familjen {
   hide = true;
   password = "hej"
+  checkPassword(text: string){
+    if(text == this.password){
+      window.location.href='http://www.cnn.com/';
+    }
+  }
   constructor() {}
 }
 
@@ -58,6 +67,10 @@ export class familjen {
 export class nphadderiet {
   hide = true;
   password = "hej"
+  checkPassword(text: string){
+    if(text == this.password){
+      window.location.href='http://www.cnn.com/';}
+  }
   constructor() {}
 }
 
@@ -68,5 +81,10 @@ export class nphadderiet {
 export class kretsn {
   hide = true;
   password = "hej"
+  checkPassword(text: string){
+    if(text == this.password){
+      window.location.href='http://www.cnn.com/';
+    }
+  }
   constructor() {}
 }
