@@ -1,1 +1,43 @@
-<p>tappan works!</p>
+<mat-grid-list #grid [cols]="cols" gutterSize="10px">
+    <mat-grid-tile rowspan="1">
+      <mat-card class="dashboard-card-clickable" appMaterialElevation (click)="navigate()"
+        style="background-color: rgb(193, 175, 73)" data-aos="zoom-in">
+        <img mat-card-image src="./../../assets/aktivitet.svg" class="img" />
+        <mat-card-content class="dashboard-card-content">
+          <div>
+            <h1></h1>
+            <p></p>
+          </div>
+        </mat-card-content>
+        <mat-card-footer></mat-card-footer>
+      </mat-card>
+    </mat-grid-tile>
+
+    <mat-grid-tile rowspan="1">
+      <mat-card class="dashboard-card-clickable" appMaterialElevation (click)="navigate()"
+        style="background-color: rgb(193, 175, 73)" data-aos="zoom-in">
+        <img mat-card-image src="./../../assets/skola.svg" class="img" />
+        <mat-card-content class="dashboard-card-content">
+          <div>
+            <h1></h1>
+            <p></p>
+          </div>
+        </mat-card-content>
+        <mat-card-footer></mat-card-footer>
+      </mat-card>
+    </mat-grid-tile>
+
+    <mat-grid-tile rowspan="1">
+      <mat-card class="dashboard-card-clickable" appMaterialElevation (click)="navigate()"
+        style="background-color: rgb(193, 175, 73)" data-aos="zoom-in">
+        <img mat-card-image src="./../../assets/nolleboken.svg" class="img" />
+        <mat-card-content class="dashboard-card-content">
+          <div style="padding-top: 20px;">
+            <h1></h1>
+            <p></p>
+          </div>
+        </mat-card-content>
+        <mat-card-footer></mat-card-footer>
+      </mat-card>
+    </mat-grid-tile>
+  </mat-grid-list>

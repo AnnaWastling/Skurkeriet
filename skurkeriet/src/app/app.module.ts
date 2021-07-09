@@ -38,8 +38,8 @@ import { TappanComponent } from './tappan/tappan.component';
     StartComponent,
     SpelkortComponent,
     familjen,
-    legionen, 
-    nphadderiet, 
+    legionen,
+    nphadderiet,
     kretsn, FiketComponent, TrappanComponent, MicrorummetComponent, TappanComponent
   ],
   imports: [
