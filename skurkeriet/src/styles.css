@@ -14,10 +14,3 @@ body { margin: 0; font-family: 'Staatliches', cursive; color: white; background-
     padding-top:60px;
 }
 
-.custom-dialog-container .mat-dialog-container {
-    padding: 0;
-    height: '800px';
-    width: '800px';
-    background-color: rgba(0,0,0,0);
-}
-

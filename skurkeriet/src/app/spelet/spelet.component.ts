@@ -12,19 +12,23 @@ export class SpeletComponent implements OnInit {
   constructor(public dialog: MatDialog) { }
 
   openDialogLegionen() {
-    this.dialog.open(legionen, { panelClass: 'custom-dialog-container' 
+    this.dialog.open(legionen, {   height: '400px',
+    width: '600px',
     });
   }
   openDialogFamiljen() {
-    this.dialog.open(familjen, { panelClass: 'custom-dialog-container'
+    this.dialog.open(familjen, {   height: '400px',
+    width: '600px',
     });
   }
   openDialogNphad() {
-    this.dialog.open(nphadderiet, { panelClass: 'custom-dialog-container'
+    this.dialog.open(nphadderiet, {   height: '400px',
+    width: '600px',
     });
   }
   openDialogKretsn() {
-    this.dialog.open(kretsn, { panelClass: 'custom-dialog-container'
+    this.dialog.open(kretsn, {  height: '400px',
+    width: '600px',
     });
   }
   ngOnInit(): void {
