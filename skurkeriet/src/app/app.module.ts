@@ -20,6 +20,10 @@ import { MatExpansionModule } from '@angular/material/expansion';
 import { SpelkortComponent } from './spelkort/spelkort.component';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { FiketComponent } from './fiket/fiket.component';
+import { TrappanComponent } from './trappan/trappan.component';
+import { MicrorummetComponent } from './microrummet/microrummet.component';
+import { TappanComponent } from './tappan/tappan.component';
 
 
 
@@ -36,7 +40,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
     familjen,
     legionen, 
     nphadderiet, 
-    kretsn
+    kretsn, FiketComponent, TrappanComponent, MicrorummetComponent, TappanComponent
   ],
   imports: [
     BrowserModule,
