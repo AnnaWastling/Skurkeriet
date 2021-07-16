@@ -58,6 +58,7 @@ export class SkurkerietComponent implements OnInit {
     'korten/axel',
     'korten/ellen',
     'korten/anna',
+    'korten/tengil',
   ];
 
 cards: CardData[] = [];

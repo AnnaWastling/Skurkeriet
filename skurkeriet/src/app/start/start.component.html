@@ -3,16 +3,14 @@
     <img class="header" src="assets/header.svg" />
   </div>
   <app-historia></app-historia>
-  <app-skurkeriet></app-skurkeriet>
-  <div>
-    <h2 style="padding-left:40%">Mysteriet på Campus</h2>
-    <p style="padding-left:30%">Phadderiernas mest älskade ägodelar har börjat försvinna på märkliga sätt. <br> Kan
-      någon ha sett något? Kan du lösa mysteriet?</p>
-  </div>
-  <div class="button-container"> <a mat-button routerLink="/spelet">Spela spelet</a></div>
+  <app-skurkeriet></app-skurkeriet> 
 
+  <div class="button-container"> 
+    <input type="image" src="assets/dice.png" style="width: 20%;" class="dice"routerLink="/spelet" />
+  </div>
+<div class="border">
   <app-folj-oss></app-folj-oss>
-  <app-tengil></app-tengil>
+  &nbsp;
   <div class="padding" data-aos="fade-zoom-in">
     <div class="text">
       Stöd Skurkeriets fortsatta gång genom att köpa Tengilmärket och
@@ -24,4 +22,5 @@
       <mat-grid-tile rowspan="1"> <img src="assets/logga.png" class="bild" />
       </mat-grid-tile>
     </mat-grid-list>
+  </div>
   </div>

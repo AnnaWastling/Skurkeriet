@@ -30,10 +30,18 @@
   color:black;
 } 
 .button-container{
-  padding-top:50px;
+  padding-top: 10%;
+  padding-bottom: 10%;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 200px;
 }
 
+.dice:hover{
+  opacity: 0.5;
+}
+.border{
+  background-color: rgb(32, 32, 30);
+  padding-top:20px;
+}
