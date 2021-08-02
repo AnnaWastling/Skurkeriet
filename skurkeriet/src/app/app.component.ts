@@ -34,11 +34,7 @@ export class AppComponent {
           label: 'tengil',
           link: './tengil',
           index: 4
-        }, {
-          label: 'spelet',
-          link: './spelet',
-          index: 5
-        },  
+        }, 
     ];
 }
 ngOnInit(): void {

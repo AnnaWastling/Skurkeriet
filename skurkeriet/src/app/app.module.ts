@@ -6,7 +6,6 @@ import { HistoriaComponent } from './historia/historia.component';
 import { SkurkerietComponent } from './skurkeriet/skurkeriet.component';
 import { FoljOssComponent } from './folj-oss/folj-oss.component';
 import { TengilComponent } from './tengil/tengil.component';
-import { SpeletComponent, familjen, legionen, nphadderiet, kretsn } from './spelet/spelet.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatTabsModule } from '@angular/material/tabs';
 import { StartComponent } from './start/start.component';
@@ -20,10 +19,6 @@ import { MatExpansionModule } from '@angular/material/expansion';
 import { SpelkortComponent } from './spelkort/spelkort.component';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatFormFieldModule } from '@angular/material/form-field';
-import { FiketComponent } from './fiket/fiket.component';
-import { TrappanComponent } from './trappan/trappan.component';
-import { MicrorummetComponent } from './microrummet/microrummet.component';
-import { TappanComponent } from './tappan/tappan.component';
 
 
 
@@ -34,13 +29,8 @@ import { TappanComponent } from './tappan/tappan.component';
     SkurkerietComponent,
     FoljOssComponent,
     TengilComponent,
-    SpeletComponent,
     StartComponent,
     SpelkortComponent,
-    familjen,
-    legionen,
-    nphadderiet,
-    kretsn, FiketComponent, TrappanComponent, MicrorummetComponent, TappanComponent
   ],
   imports: [
     BrowserModule,
