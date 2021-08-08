@@ -19,6 +19,7 @@ import { MatExpansionModule } from '@angular/material/expansion';
 import { SpelkortComponent } from './spelkort/spelkort.component';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { SpeletComponent } from './spelet/spelet.component';
 
 
 
@@ -31,6 +32,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
     TengilComponent,
     StartComponent,
     SpelkortComponent,
+    SpeletComponent,
   ],
   imports: [
     BrowserModule,

@@ -16,7 +16,7 @@ h4 {
 
 
 .card {
-	color: black; /*SHERPA BLUE*/
+	color: black; 
 	background-color: rgb(228, 198, 153);
 	position:relative;
 	top: 50%;
@@ -78,7 +78,7 @@ h4 {
 }
 
 .card .imgBox img {
-	min-width: 250px;
+	min-width: 400px;
 	max-height: 500px;
 }
 

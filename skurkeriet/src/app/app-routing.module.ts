@@ -5,6 +5,7 @@ import { SkurkerietComponent } from './skurkeriet/skurkeriet.component';
 import { FoljOssComponent } from './folj-oss/folj-oss.component';
 import { TengilComponent } from './tengil/tengil.component';
 import { StartComponent } from './start/start.component';
+import { SpeletComponent } from './spelet/spelet.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/start', pathMatch: 'full' },
@@ -13,6 +14,7 @@ const routes: Routes = [
   { path: 'skurkeriet', component: SkurkerietComponent },
   { path: 'folj-oss', component: FoljOssComponent },
   { path: 'tengil', component: TengilComponent },
+  { path: 'spelet', component: SpeletComponent },
 ];
 
 @NgModule({
