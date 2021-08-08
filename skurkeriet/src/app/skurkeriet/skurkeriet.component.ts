@@ -52,7 +52,7 @@ export class SkurkerietComponent implements OnInit {
     'korten/alice',
     'korten/simon',
     'korten/tim',
-    'korten/aliceM',
+    'korten/AliceM',
     'korten/patric',
     'korten/amanda',
     'korten/axel',
