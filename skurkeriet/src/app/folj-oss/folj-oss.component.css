@@ -10,3 +10,8 @@
 .rubrik{
     text-align: center;
 }
+.bakgrund{
+    padding-top: 60px;
+    background-color: rgb(26, 20, 18);
+    padding-bottom: 60px;
+}
