@@ -10,7 +10,7 @@ export class TengilComponent implements OnInit {
 
   constructor() { }
   cardImages = [
-    'tengil',
+    'korten/tengil',
   ];
   cards: CardData[] = [];
 flippedCards: CardData[] = [];

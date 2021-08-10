@@ -1,11 +1,14 @@
 .text{
 
     text-align: center;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 .bakgrund{
-    background-color: rgb(26, 20, 18);
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding:100px;
 }
+img {
+    max-width: 100%;
+    width: 1000px;
+    height: auto;
+  }

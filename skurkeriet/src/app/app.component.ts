@@ -45,7 +45,7 @@ ngOnInit(): void {
   this.router.events.subscribe((res) => {
       this.activeLinkIndex = this.navLinks.indexOf(this.navLinks.find(tab => tab.link === '.' + this.router.url));
   });
-  AOS.init({duration: 1200});
+  AOS.init({duration: 800});
 }
 
 }
