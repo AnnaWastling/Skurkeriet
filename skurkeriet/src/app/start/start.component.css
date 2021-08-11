@@ -10,6 +10,12 @@
     vertical-align: middle;
   }
 
+  @media screen and (max-width: 600px) {
+    div.container{
+      display: none;
+    }
+  }
+
    .bild{
     width: 50%;
     

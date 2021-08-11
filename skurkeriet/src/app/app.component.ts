@@ -27,11 +27,11 @@ export class AppComponent {
             link: './skurkeriet',
             index: 2
         }, {
-            label: 'Sociala medier',
+            label: 'Följ oss',
             link: './folj-oss',
             index: 3
         }, {
-          label: 'Tengil',
+          label: 'Tengil?',
           link: './tengil',
           index: 4
         }, {

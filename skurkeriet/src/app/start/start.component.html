@@ -10,13 +10,13 @@
   <app-folj-oss></app-folj-oss>
   &nbsp;
   <div class="padding" data-aos="fade-zoom-in">
-    <div class="text">
-      Stöd Skurkeriets fortsatta gång genom att köpa Tengilmärket och
-      Skurkeriets märke.
-    </div>
-    <mat-grid-list cols="2" rowHeight="20:11" gutterSize="10px">
+    <mat-grid-list #grid [cols]="cols" rowHeight="20:11" gutterSize="10px">
       <mat-grid-tile rowspan="1"><img src="assets/tengilmarke.PNG" class="bild" />
       </mat-grid-tile>
+      <mat-grid-tile>    <div class="text">
+        Stöd Skurkeriets fortsatta gång genom att köpa Tengilmärket och
+        Skurkeriets märke.
+      </div></mat-grid-tile>
       <mat-grid-tile rowspan="1"> <img src="assets/logga.png" class="bild" />
       </mat-grid-tile>
     </mat-grid-list>

@@ -7,6 +7,7 @@ import { CardData } from '../spelkort/spelkort';
   styleUrls: ['./tengil.component.css']
 })
 export class TengilComponent implements OnInit {
+  public mobile = false;
 
   constructor() { }
   cardImages = [
@@ -40,6 +41,9 @@ cardClicked(index: number): void {
 }
   ngOnInit(): void {
     this.setupCards();
+    if (window.screen.width === 360) { // 768px portrait
+      this.mobile = true;
+    }
   }
 
 }
