@@ -14,15 +14,15 @@
   .lg-view{
     display:block;
   }
-.img2{
-  width: 100%;
-  height: auto;
-}
+  h3 {
+    font-family: Garamond, serif, cursive !important;
+  }
   .sm-view{
+    padding-top: 60px;
     display:none;
+    background-color: rgb(26, 20, 18);
     text-align: center;
     border-radius: 20px;
-    padding-top: 60px;
   }
   
   @media screen and (max-width: 600px) {
