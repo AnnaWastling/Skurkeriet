@@ -6,7 +6,7 @@
 .bakgrund{
     padding:100px;
 }
-img {
+.img {
     max-width: 100%;
     width: 1000px;
     height: auto;
@@ -14,14 +14,15 @@ img {
   .lg-view{
     display:block;
   }
-  h3 {
-    font-family: Garamond, serif, cursive !important;
-  }
+.img2{
+  width: 100%;
+  height: auto;
+}
   .sm-view{
     display:none;
-    background-color: rgb(26, 20, 18);
     text-align: center;
     border-radius: 20px;
+    padding-top: 60px;
   }
   
   @media screen and (max-width: 600px) {
