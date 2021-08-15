@@ -1,10 +1,20 @@
 <div class="holder">
-<mat-grid-list cols="1" rowHeight="20:11" class="padding">
-    <mat-grid-tile rowspan="1" *ngFor="let c of cards; let idx=index" data-aos="zoom-in">
-      <app-spelkort  [data]="c" (cardClicked)="cardClicked(idx)">
-      </app-spelkort>
-    </mat-grid-tile>
-  </mat-grid-list>
+  <span class="lg-view">
+    <mat-grid-list cols="1" rowHeight="20:11" class="padding">
+      <mat-grid-tile rowspan="1" *ngFor="let c of cards; let idx=index" data-aos="zoom-in">
+        <app-spelkort [data]="c" (cardClicked)="cardClicked(idx)">
+        </app-spelkort>
+      </mat-grid-tile>
+    </mat-grid-list>
+  </span>
+  <span class="sm-view">
+    <h3>All makt åt Tengil, vår Befriare. Vid tidens begynnelse, strax innan Big Bang, steg ett mäktigt väsen fram ur
+      skuggorna. Det som givit styrka och hopp åt Skurkarna. Detta väsen, Tengil, tog formen av en ståtlig maniken för
+      att nå er alldagliga! Tengil höjer Skurkeriets omoral och beskyddar dess handlingar. Han höljer Skurkarnas själar
+      i skuggor och fyller deras hjärtan med ofog. Skurkeriet bär med sig Tengils Avatar från och till, men frukta ej!
+      Tengil har trots sitt hårda yttre en av de stillsammaste själar. Nollan löper ingen risk att utsättas för Tengils
+      vrede. Sanningen är dock att ingen vet vad Tengil planerar i skuggorna annat än han själv.
+
+      P.S also good at parties.</h3>
+  </span>
 </div>
-<div class ="padding;" *ngIf="mobile">Du är inne på mobilen</div>
-  

@@ -1,5 +1,24 @@
-@media screen and (max-width: 600px) {
-    div.holder{
+.lg-view{
+  display:block;
+}
+h3 {
+  font-family: Garamond, serif, cursive !important;
+}
+.sm-view{
   display:none;
-    }
-  }
+  background-color: rgb(26, 20, 18);
+  text-align: center;
+  padding-top: 60px;
+  border-radius: 20px;
+
+}
+
+@media screen and (max-width: 600px) {
+  .lg-view{
+    display:none;
+ }
+
+ .sm-view{
+    display:inline-flex;
+ }
+}

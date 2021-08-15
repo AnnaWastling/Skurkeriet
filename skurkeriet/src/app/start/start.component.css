@@ -9,16 +9,36 @@
     height: auto;
     vertical-align: middle;
   }
+  .lg-view{
+    display:block;
+  }
+  
+  .sm-view{
+    display:none;
+    color:yellow;
+    text-align: center;
+    padding-top: 60px;
+    padding-left: 25%;
+
+  }
 
   @media screen and (max-width: 600px) {
-    div.container{
-      display: none;
-    }
+    .lg-view{
+      display:none;
+   }
+  
+   .sm-view{
+      display:inline-flex;
+
+   }
   }
 
    .bild{
     width: 50%;
     
+   }
+   .logga{
+     width: 80%;
    }
    .mat-button, .mat-raised-button{
     background-color:black;

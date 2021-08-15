@@ -1,5 +1,4 @@
 .text{
-
     text-align: center;
     padding-left: 10%;
     padding-right: 10%;
@@ -12,8 +11,25 @@ img {
     width: 1000px;
     height: auto;
   }
+  .lg-view{
+    display:block;
+  }
+  h3 {
+    font-family: Garamond, serif, cursive !important;
+  }
+  .sm-view{
+    display:none;
+    background-color: rgb(26, 20, 18);
+    text-align: center;
+    border-radius: 20px;
+  }
+  
   @media screen and (max-width: 600px) {
-    div.img{
-  display:none;
-    }
+    .lg-view{
+      display:none;
+   }
+  
+   .sm-view{
+      display:block;
+   }
   }
