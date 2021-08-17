@@ -20,6 +20,7 @@ import { SpelkortComponent } from './spelkort/spelkort.component';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { SpeletComponent } from './spelet/spelet.component';
+import { SplashscreenComponent } from './splashscreen/splashscreen.component';
 
 
 
@@ -33,6 +34,7 @@ import { SpeletComponent } from './spelet/spelet.component';
     StartComponent,
     SpelkortComponent,
     SpeletComponent,
+    SplashscreenComponent,
   ],
   imports: [
     BrowserModule,
