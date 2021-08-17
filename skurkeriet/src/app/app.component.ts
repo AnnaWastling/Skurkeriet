@@ -10,41 +10,9 @@ import * as AOS from 'aos';
 })
 export class AppComponent {
   title = 'Skurkeriet';  
-  navLinks: any[];
-  activeLinkIndex = -1; 
-  constructor(private router: Router) {
-    this.navLinks = [
-          {
-            label: 'Start',
-            link: './start',
-            index: 0
-        }, {
-            label: 'Historia',
-            link: './historia',
-            index: 1
-        }, {
-            label: 'Skurkeriet',
-            link: './skurkeriet',
-            index: 2
-        }, {
-            label: 'Följ oss',
-            link: './folj-oss',
-            index: 3
-        }, {
-          label: 'Tengil?',
-          link: './tengil',
-          index: 4
-        }, {
-          label: 'Idolkort',
-          link: './spelet',
-          index: 4
-        }, 
-    ];
+  constructor() {
 }
 ngOnInit(): void {
-  this.router.events.subscribe((res) => {
-      this.activeLinkIndex = this.navLinks.indexOf(this.navLinks.find(tab => tab.link === '.' + this.router.url));
-  });
   AOS.init({duration: 800});
 }
 

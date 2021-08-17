@@ -1,6 +1,7 @@
 import {  Component } from '@angular/core';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { Router } from '@angular/router';
+import { CardData } from '../spelkort/spelkort';
 
 @Component({
   selector: 'app-start',
@@ -46,7 +47,49 @@ export class StartComponent {
       }
     });
   }
+  cardImages = [
+    'korten/jonte',
+    'korten/alice',
+    'korten/simon',
+    'korten/tim',
+    'korten/aliceM',
+    'korten/patric',
+    'korten/amanda',
+    'korten/axel',
+    'korten/ellen',
+    'korten/anna',
+    'korten/tengil',
+  ];
 
-  ngOnInit() {
+cards: CardData[] = [];
+flippedCards: CardData[] = [];
+
+setupCards(): void {
+    this.cards = [];
+    this.cardImages.forEach((image) => {
+      const cardData: CardData = {
+        imageId: image,
+        imageIdBack: image,
+        state: 'default'
+      };
+      this.cards.push({ ...cardData });
+    });
+}
+
+cardClicked(index: number): void {
+  const cardInfo = this.cards[index];
+
+  if (cardInfo.state === 'default') {
+    cardInfo.state = 'flipped';
+    this.flippedCards.push(cardInfo);
+
+  } else if (cardInfo.state === 'flipped') {
+    cardInfo.state = 'default';
+    this.flippedCards.pop();
+  }
+}
+
+  ngOnInit(): void {
+    this.setupCards();
   }
 }
