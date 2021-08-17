@@ -1,19 +1,21 @@
 <nav mat-tab-nav-bar>
   <a mat-tab-link href="#Start"> Start</a>
   <a mat-tab-link href="#Historia"> Historia</a>
-
+  <a mat-tab-link href="#Skurkeriet"> Skurkeriet</a>
+  <a mat-tab-link href="#Idolkort"> Idolkort</a>
+  <a mat-tab-link href="#FoljOss"> Följ oss</a>
   </nav>
 <div>
+  <a name="Start"></a>
   <span class="lg-view container" data-aos="fade-zoom-in">
-    <a name="Start"></a>
     <img class="header" src="assets/header.png" />
   </span>
   <span class="sm-view">
     <img class="header logga" src="assets/1.png" />
     </span>
+    <a name="Historia"></a>
     <span class="lg-view">
       <div class="historia" data-aos="fade-up"></div>
-      <a name="Historia"></a>
       <div class="card">
         <div class="imgBox">
           <div class="bark"></div>
@@ -49,16 +51,14 @@
     
       </h3>
     </span>
-    
+    <a name="Skurkeriet"></a>
     <mat-grid-list #grid [cols]="cols" rowHeight="20:11" gutterSize="10px" class="padding">
       <mat-grid-tile rowspan="2" *ngFor="let c of cards; let idx=index" data-aos="flip-right">
         <app-spelkort  [data]="c" (cardClicked)="cardClicked(idx)">    
         </app-spelkort>
       </mat-grid-tile>
     </mat-grid-list>
-    
-    
-    
+    <a name="Idolkort"></a>    
       &nbsp;
 <span class="lg-view">
   <div class="bakgrund">
@@ -86,8 +86,36 @@
   </h3>
 </span>
 <div class="border">
-  <app-folj-oss></app-folj-oss>
-  &nbsp;
+  <div class="bakgrundsoc" data-aos="fade-zoom-in">
+    <h1 class="rubrik" >Följ Skurkeriet på sociala medier </h1>
+    <a name="FoljOss"></a>    
+  <mat-grid-list #grid [cols]="cols" rowHeight="20:11" gutterSize="10px">
+    <mat-grid-tile >
+      <a href="https://www.instagram.com/skurkeriet2122">
+        <span
+          class="media iconify"
+          data-icon="mdi:instagram"
+          data-inline="false"
+        ></span>
+      </a>
+    </mat-grid-tile>
+    <mat-grid-tile >
+      <a href="http://www.snapchat.com/add/Skurkeriet"
+        ><img src="assets/snapchat.png" style="width: 120px" class="media"
+      /></a>
+    </mat-grid-tile>
+    <mat-grid-tile >
+      <a href="https://www.facebook.com/skurkeriet">
+        <span
+          class="media iconify"
+          data-icon="mdi:facebook"
+          data-inline="false"
+        ></span>
+      </a>
+    </mat-grid-tile>
+  </mat-grid-list>
+  </div>
+    &nbsp;
   <div class="padding" data-aos="fade-zoom-in">
     <mat-grid-list #grid [cols]="cols" rowHeight="20:11" gutterSize="10px">
       <mat-grid-tile rowspan="1"><img src="assets/tengilmarke.PNG" class="bild" />
