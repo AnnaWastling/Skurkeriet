@@ -15,10 +15,8 @@
   
   .sm-view{
     display:none;
-    color:yellow;
     text-align: center;
-    padding-top: 60px;
-    padding-left: 25%;
+    background-color: rgb(26, 20, 18);
 
   }
 
@@ -84,9 +82,7 @@
 p {
   font-family: Garamond, serif, cursive !important;
 }
-h3 {
-  font-family: Garamond, serif, cursive !important;
-}
+
 
 .card {
   color: black;
@@ -104,28 +100,6 @@ h3 {
   transition: 1s;
 }
 
-.lg-view{
-  display:block;
-}
-
-.sm-view{
-  display:none;
-  padding-top: 60px;
-  background-color: rgb(26, 20, 18);
-  text-align: center;
-  border-radius: 20px;
-
-}
-
-@media screen and (max-width: 600px) {
-  .lg-view{
-    display:none;
- }
-
- .sm-view{
-    display:inline-flex;
- }
-}
 
 
 
@@ -224,29 +198,11 @@ h3 {
   width: 1000px;
   height: auto;
 }
-.lg-view{
-  display:block;
-}
+
 h3 {
   font-family:'Times New Roman', Times, serif, cursive !important;
 }
-.sm-view{
-  padding-top: 60px;
-  display:none;
-  background-color: rgb(26, 20, 18);
-  text-align: center;
-  border-radius: 20px;
-}
 
-@media screen and (max-width: 600px) {
-  .lg-view{
-    display:none;
- }
-
- .sm-view{
-    display:block;
- }
-}
 
 
 
